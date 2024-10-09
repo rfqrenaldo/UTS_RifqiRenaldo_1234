@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/heading1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="27dp"
+        android:text="Welcome To My App"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        />
+    <View
+        android:id="@+id/garis"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/heading1"
+        android:background="@color/black"
+        />
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_below="@id/garis"
+        android:layout_width="316dp"
+        android:layout_height="340dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="101dp"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/gambar1"
+        />
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="301dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image_view"
+        android:hint="Enter Your Name"
+        android:layout_centerHorizontal="true"
+        android:inputType="text"
+        android:textSize="16dp" />
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/et_name"
+        android:text="Submit"
+        android:layout_alignStart="@+id/et_name"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:textSize="11sp"
+        android:backgroundTint="@color/black"
+        />
+
+    <Button
+        android:id="@+id/btn_close"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/et_name"
+        android:text="Cancel"
+        android:layout_alignEnd="@+id/et_name"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:textSize="11sp"
+        android:backgroundTint="@color/black"
+        />
+
+</RelativeLayout>
